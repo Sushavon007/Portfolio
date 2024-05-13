@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Kevin.</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/da1f6d3069.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Developer</p>
+                <h1>Hi, I'm <span>Kevin</span><br>Jen from Australia</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------about--------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga temporibus atque maiores deserunt, reiciendis aperiam excepturi, molestiae error praesentium molestias explicabo nihil consectetur minus quibusdam incidunt dignissimos ipsum debitis maxime veniam totam sequi? Consequuntur, ipsam placeat atque sit neque natus accusantium maiores omnis modi assumenda quaerat. Labore accusantium expedita, distinctio voluptatem pariatur inventore, voluptatum sint, reprehenderit laborum magnam obcaecati?</p>
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                        <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                        <div class="tab-links" onclick="opentab('education')">Education</div>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Design Web/App interfaces</li>
+                            <li><span>Web development</span><br>Web App Development</li>
+                            <li><span>App development</span><br>Building Android/iOS App</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023</span><br>Web App Development as own project</li>
+                            <li><span>2022</span><br>Internship at Sigment Technologies pvt ltd</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Running</span><br>MCA in IEM Newtown</li>
+                            <li><span>2023</span><br>BCA from Seacom</li>
+                            <li><span>2020</span><br>HS from WBCHSE</li>
+                            <li><span>2018</span><br>10th from WBBSE</li>
+                        </ul>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------services----------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, animi eius distinctio sunt dolorem alias at iste consequuntur maiores error soluta voluptates ipsa placeat dignissimos.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop-simple"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, animi eius distinctio sunt dolorem alias at iste consequuntur maiores error soluta voluptates ipsa placeat dignissimos.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <h2>App Design</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, animi eius distinctio sunt dolorem alias at iste consequuntur maiores error soluta voluptates ipsa placeat dignissimos.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- -----------------Works----------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media app</h3>
+                        <p>The app connect you to the talented people around the world.
+                            Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music app</h3>
+                        <p>The app connect you to the talented people around the world.
+                            Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping app</h3>
+                        <p>The app connect you to the talented people around the world.
+                            Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- --------------------------contact---------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91 9876543210</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/mtbboy.sushavon/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2"><i class="fa-solid fa-download"></i>&nbsp Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="Name" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Messege" rows="6" placeholder="Your Messege"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © kevin. made with <i class="fa-solid fa-heart"></i> by motoXcoder</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
