@@ -191,7 +191,7 @@ nav ul li a:hover::after{
 .layer{
     height: 0%;
     width: 100%;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0,0,0,0.3), #ff004f);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -306,6 +306,10 @@ form .btn2{
 }
 .copyright span{
     color: #ff004f;
+}
+.text-dec{
+    text-decoration: none;
+    color: #fff;
 }
 /* ----------------------------css for small screen---------------------------- */
 nav .fas{
