@@ -1,179 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - motoXcoder.</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/svg+xml" href="images/Portfolio-Favicon.png" />
-    <script src="https://kit.fontawesome.com/da1f6d3069.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <script
+      src="https://kit.fontawesome.com/da1f6d3069.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <a href="index.html"><img src="images/logo3.png" class="logo"></a>
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About me</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Full Stack Developer</p>
-                <h1>Hi, This is <span>Sushavon</span><br>Maji from India</h1>
-            </div>
+      <div class="container">
+        <nav>
+          <a href="index.html"><img src="images/logo3.png" class="logo" /></a>
+          <ul id="sidemenu">
+            <li><a href="#header" onclick="closemenu()">Home</a></li>
+            <li><a href="#about" onclick="closemenu()">About me</a></li>
+            <li><a href="#services" onclick="closemenu()">Services</a></li>
+            <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+            <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+            <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Full Stack Developer</p>
+          <h1>Hi, This is <span>Sushavon</span><br />Maji from India</h1>
         </div>
+      </div>
     </div>
     <!-- ------------------------about--------------------- -->
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user.jpg" alt="photo">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p> 
-                        Welcome to my portfolio. I’m a Full-Stack Developer with a passion for coding, a love for painting, and an adventurous spirit for riding motorcycles and exploring new places. My journey in tech began with a fascination for how things work behind the scenes. As a beginner, I dove into building projects, eager to transform ideas into reality. I’ve started creating dynamic and interactive web applications through the MERN stack. Each project is a stepping stone in my learning process, and I’m excited to share these early works with you. My approach combines technical skills with creativity, inspired by my hobbies and experiences.
-                        <br><br>
-                        Thank you for visiting my portfolio. I hope you enjoy exploring my projects as much as I enjoyed building them. Feel free to connect if you’d like to discuss ideas or opportunities. Let’s create something extraordinary together!
-                    </p>
-                    <div class="tab-titles">
-                        <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
-                        <div class="tab-links" onclick="opentab('experience')">Experience</div>
-                        <div class="tab-links" onclick="opentab('education')">Education</div>
-                        <div class="tab-links" onclick="opentab('certification')">Certification</div>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Programming Languages</span><br>C, C++, Java, Python, HTML/CSS, JavaScript</li>
-                            <li><span>Frameworks/Libraries</span><br>Node.js, Express.js, React.js</li>
-                            <li><span>Databases</span><br>MongoDB, PostgreSQL, MySQL</li>
-                            <li><span>Tools/Platform</span><br>Linux, VSCode, Postman, WordPress, Figma</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>October 2024 - Present</span><br>SDE Intern at IEMA Research & Development</li>
-                            <li><span>May 2022 - July 2022</span><br>SDE Intern at Sigment Technologies Solutions</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>Pursuing</span><br>MCA in University of Engineering & Management, Kolkata</li>
-                            <li><span>2023</span><br>BCA from Seacom Management College</li>
-                            <li><span>2020</span><br>HS from New Andul Higher Class School(WBCHSE)</li>
-                            <li><span>2018</span><br>10th from New Andul Higher Class School(WBBSE)</li>
-                        </ul>
-                    </div>                    
-                    <div class="tab-contents" id="certification">
-                        <ul>
-                            <li><span>Postman</span><br>Postman API Fundamentals Student Expert</li>
-                            <li><span>Coursera</span><br>Linux Commands Shell Scripting Essentials V2</li>
-                            <li><span>Coursera</span><br>AWS Cloud Practitioner Essentials</li>
-                        </ul>
-                    </div>                    
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.jpg" alt="photo" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p class="about-text">
+              Welcome to my portfolio. I’m a Full-Stack Developer with a passion
+              for coding, a love for painting, and an adventurous spirit for
+              riding motorcycles and exploring new places. My journey in tech
+              began with a fascination for how things work behind the scenes. As
+              a beginner, I dove into building projects, eager to transform
+              ideas into reality. I’ve started creating dynamic and interactive
+              web applications through the MERN stack. Each project is a
+              stepping stone in my learning process, and I’m excited to share
+              these early works with you. My approach combines technical skills
+              with creativity, inspired by my hobbies and experiences.
+              <br /><br />
+              Thank you for visiting my portfolio. I hope you enjoy exploring my
+              projects as much as I enjoyed building them. Feel free to connect
+              if you’d like to discuss ideas or opportunities. Let’s create
+              something extraordinary together!
+            </p>
+            <div class="tab-titles">
+              <div class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </div>
+              <div class="tab-links" onclick="opentab('experience')">
+                Experience
+              </div>
+              <div class="tab-links" onclick="opentab('education')">
+                Education
+              </div>
+              <div class="tab-links" onclick="opentab('certification')">
+                Certification
+              </div>
             </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Programming Languages</span><br />C, C++, Java, Python,
+                  HTML/CSS, JavaScript
+                </li>
+                <li>
+                  <span>Frameworks/Libraries</span><br />Node.js, Express.js,
+                  React.js
+                </li>
+                <li><span>Databases</span><br />MongoDB, PostgreSQL, MySQL</li>
+                <li>
+                  <span>Tools/Platform</span><br />Linux, VSCode, Postman,
+                  WordPress, Figma
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>October 2024 - Present</span><br />SDE Intern at IEMA
+                  Research & Development
+                </li>
+                <li>
+                  <span>May 2022 - July 2022</span><br />SDE Intern at Sigment
+                  Technologies Solutions
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Pursuing</span><br />MCA in University of Engineering &
+                  Management, Kolkata
+                </li>
+                <li>
+                  <span>2023</span><br />BCA from Seacom Management College
+                </li>
+                <li>
+                  <span>2020</span><br />HS from New Andul Higher Class
+                  School(WBCHSE)
+                </li>
+                <li>
+                  <span>2018</span><br />10th from New Andul Higher Class
+                  School(WBBSE)
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="certification">
+              <ul>
+                <li>
+                  <span>Postman</span><br />Postman API Fundamentals Student
+                  Expert
+                </li>
+                <li>
+                  <span>Coursera</span><br />Linux Commands Shell Scripting
+                  Essentials V2
+                </li>
+                <li>
+                  <span>Coursera</span><br />AWS Cloud Practitioner Essentials
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- -----------------services----------------- -->
     <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-                <div class="services-list">
-                    <div>
-                        <i class="fa-solid fa-code-merge"></i>
-                        <h2>API Development Using Express.js</h2>
-                        <p>Build fast and scalable RESTful APIs using Express.js, with secure authentication, database integration, and optimized performance. Let's power up your backend!</p>
-                        <a href="https://expressjs.com/" target="_blank">Learn more</a>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-code"></i>
-                        <h2>Front-End Development using React.js</h2>
-                        <p>Develop high-performance, responsive, and user-centric interfaces using React.js, ensuring seamless functionality and an engaging user experience.</p>
-                        <a href="https://react.dev/" target="_blank">Learn more</a>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-crop-simple"></i>
-                        <h2>Web Development using WordPress</h2>
-                        <p>Create custom, responsive, and high-performing websites using WordPress, ensuring seamless functionality, SEO optimization, and a user-friendly experience tailored to your business needs.</p>
-                        <a href="https://wordpress.com/" target="_blank">Learn more</a>
-                    </div>
-                </div>
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code-merge"></i>
+            <h2>API Development Using Express.js</h2>
+            <p>
+              Build fast and scalable RESTful APIs using Express.js, with secure
+              authentication, database integration, and optimized performance.
+              Let's power up your backend!
+            </p>
+            <a href="https://expressjs.com/" target="_blank">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Front-End Development using React.js</h2>
+            <p>
+              Develop high-performance, responsive, and user-centric interfaces
+              using React.js, ensuring seamless functionality and an engaging
+              user experience.
+            </p>
+            <a href="https://react.dev/" target="_blank">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>Web Development using WordPress</h2>
+            <p>
+              Create custom, responsive, and high-performing websites using
+              WordPress, ensuring seamless functionality, SEO optimization, and
+              a user-friendly experience tailored to your business needs.
+            </p>
+            <a href="https://wordpress.com/" target="_blank">Learn more</a>
+          </div>
         </div>
+      </div>
     </div>
     <!-- -----------------Works----------------- -->
     <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/1.jpg" alt="">
-                    <div class="layer">
-                        <h3>Play Simon</h3>
-                        <p>Simon is a classic memory game where players repeat an increasingly complex sequence of lights and sounds.</p>
-                        <a href="https://sushavon007.github.io/Simon-Game/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/2.jpg" alt="">
-                    <div class="layer">
-                        <h3>Arithmetic Calculator</h3>
-                        <p>An Arithmetic Calculator is a simple tool that performs basic mathematical operations like addition, subtraction, multiplication, and division.</p>
-                        <a href="https://sushavon007.github.io/Calculator/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/3.webp" alt="">
-                    <div class="layer">
-                        <h3>Token Generator</h3>
-                        <p>Token Generator is a tool that creates secure, unique tokens for authentication, encryption, or data access.</p>
-                        <a href="https://token-generator-one-sable.vercel.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/1.jpg" alt="" />
+            <div class="layer">
+              <h3>Play Simon</h3>
+              <p>
+                Simon is a classic memory game where players repeat an
+                increasingly complex sequence of lights and sounds.
+              </p>
+              <a
+                href="https://sushavon007.github.io/Simon-Game/"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
             </div>
-            <a href="works.html" class="btn">See more</a>
+          </div>
+          <div class="work">
+            <img src="images/2.jpg" alt="" />
+            <div class="layer">
+              <h3>Arithmetic Calculator</h3>
+              <p>
+                An Arithmetic Calculator is a simple tool that performs basic
+                mathematical operations like addition, subtraction,
+                multiplication, and division.
+              </p>
+              <a
+                href="https://sushavon007.github.io/Calculator/"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/3.webp" alt="" />
+            <div class="layer">
+              <h3>Token Generator</h3>
+              <p>
+                Token Generator is a tool that creates secure, unique tokens for
+                authentication, encryption, or data access.
+              </p>
+              <a
+                href="https://token-generator-one-sable.vercel.app/"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
         </div>
+        <a href="works.html" class="btn">See more</a>
+      </div>
     </div>
     <!-- --------------------------contact---------------------------- -->
     <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i><a href="mailto:sushavon098@gmail.com" class="text-dec"> sushavon098@gmail.com</a></p>
-                    <p><i class="fa-solid fa-square-phone"></i><a href="tel:+919290801610" class="text-dec"> +91 6290801610</a></p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/mtbboy.sushavon" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/motoxplorer__" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://x.com/motoXplorer_" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="https://www.linkedin.com/in/sushavonmaji/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/Sushavon007" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                    <a href="images/Sushavon's Resume.pdf" download class="btn btn2"><i class="fa-solid fa-download"></i>&nbsp Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="Name" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Messege" rows="6" placeholder="Your Messege"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i
+              ><a href="mailto:sushavon098@gmail.com" class="text-dec">
+                sushavon098@gmail.com</a
+              >
+            </p>
+            <p>
+              <i class="fa-solid fa-square-phone"></i
+              ><a href="tel:+919290801610" class="text-dec"> +91 6290801610</a>
+            </p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/mtbboy.sushavon" target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/motoxplorer__" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://x.com/motoXplorer_" target="_blank"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/sushavonmaji/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/Sushavon007" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
             </div>
+            <a href="images/Sushavon's Resume.pdf" download class="btn btn2"
+              ><i class="fa-solid fa-download"></i>&nbsp Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="Name" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Messege"
+                rows="6"
+                placeholder="Your Messege"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
         </div>
-        <div class="copyright">
-            <p>Copyright © 2024 All Rights Reserved by <span>motoXcoder</span></p>
-        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2024 All Rights Reserved by <span>motoXcoder</span></p>
+      </div>
     </div>
-
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
